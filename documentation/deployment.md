@@ -2,7 +2,7 @@
 
 ## 1. Virtual Machine Setup
 
-An Ubuntu Server 24.04 LTS virtual machine was created using Oracle VirtualBox, configurated with:
+An Ubuntu Server 24.04 LTS virtual machine was created using Oracle VirtualBox, configured with:
 
 - 4 virtual CPUs
 - 8 GB of RAM
@@ -33,13 +33,13 @@ All three services were running successfully. Access to the Wazuh Dashboard was 
 
 ## 4. Windows Agent Deployment
 
-The Windows agent was installed on the physical host using the MSI installer provided by Wazuh. The agent was configurated with:
+The Windows agent was installed on the physical host using the MSI installer provided by Wazuh. The agent was configured with:
 
 - Manager address: Wazuh server Host-only IP
 - Agent name: Windows10Pro
 - Agent group: default
 
-The agent service was started using Powershell:
+The agent service was started using PowerShell:
 
 NET START WazuhSvc
 
@@ -57,7 +57,7 @@ New-Item -ItemType Directory -Path C:\Wazuh-Lab -Force
 
 The Wazuh agent configuration file was modified to enable real-time monitoring of this directory. Configuration file:
 
-C:\Program files (x86)\ossec-agent\ossec.conf
+C:\Program Files (x86)\ossec-agent\ossec.conf
 
 The following entry was added inside the syscheck section:
 
@@ -71,7 +71,7 @@ Restart-Service WazuhSvc
 
 ## 6. Windows Security Event Collection
 
-The agent configuration was inspected to verify that the Windows Security event log was being monitored. Event collection was validated by generating a controlled authentication failure and locating and resulting alert in Wazuh.
+The agent configuration was inspected to verify that the Windows Security event log was being monitored. Event collection was validated by generating a controlled authentication failure and locating the resulting alert in Wazuh.
 
 ## 7. Deployment Validation
 
@@ -83,9 +83,9 @@ The agent configuration was inspected to verify that the Windows Security event 
 | Windows agent connected | Passed |
 | Windows security event collection | Passed |
 | Real-time file integrity monitoring | Passed |
-| Alert visualitazion in Dashboard | Passed |
+| Alert visualization in Dashboard | Passed |
 
 ## References
 
 - [Wazuh Documentation](https://documentation.wazuh.com/current/)
-- [Wazuh Quickstart](https://documentation.wazuh.com/quickstart.html)
+- [Wazuh Quickstart](https://documentation.wazuh.com/current/quickstart.html)
