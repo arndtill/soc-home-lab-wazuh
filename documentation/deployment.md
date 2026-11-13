@@ -41,7 +41,7 @@ The Windows agent was installed on the physical host using the MSI installer pro
 
 The agent service was started using Powershell:
 
-NET START Wazuh5vc
+NET START WazuhSvc
 
 Agent connectivity was verified from the Wazuh server:
 
@@ -61,11 +61,13 @@ C:\Program files (x86)\ossec-agent\ossec.conf
 
 The following entry was added inside the syscheck section:
 
+```xml
 <directories realtime="yes">C:\Wazuh-Lab</directories>
+```
 
 The agent service was restarted to apply the configuration:
 
-Restart-Service Wazuh5vc
+Restart-Service WazuhSvc
 
 ## 6. Windows Security Event Collection
 
