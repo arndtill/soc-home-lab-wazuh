@@ -124,10 +124,10 @@ The detected file operations were intentionally performed as part of the control
 
 ## 8. Evidence
 
-- [Threat Hunting Search](../evidence/01_fim_search.PNG)
-- [File Creation Alert](../evidence/02_fim_file_added.PNG)
-- [File Modification Alert](../evidence/03_fim_file_modified.PNG)
-- [File Deletion Alert](../evidence/04_fim_file_deleted.PNG)
+- [Threat Hunting Search](../evidence/fim/01_fim_search.PNG)
+- [File Creation Alert](../evidence/fim/02_fim_file_added.PNG)
+- [File Modification Alert](../evidence/fim/03_fim_file_modified.PNG)
+- [File Deletion Alert](../evidence/fim/04_fim_file_deleted.PNG)
 
 ## 9. Conclusion
 
