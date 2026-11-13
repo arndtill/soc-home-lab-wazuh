@@ -18,8 +18,8 @@ This project documents a home lab built to gain hands-on experience with Wazuh a
 
 - Deploy and configure a Wazuh server
 - Connect and monitor a Windows endpoint
-- Collect and analyze Windows security points
-- Monitor file creation, modificaton and deletion
+- Collect and analyze Windows security events
+- Monitor file creation, modification and deletion
 - Investigate alerts using the Wazuh Dashboard
 - Document findings and supporting evidence
 
@@ -33,11 +33,11 @@ Generated a controlled failed login attempt and investigated the resulting alert
 - Wazuh Rule ID: 60122
 - Alert Level: 5
 
-Investigation report
+[Investigation report](reports/failed-logon-investigation.md)
 
 ## File Integrity Monitoring
 
-Configured a real-time monitoring of a dedicated directory and verified the detection of file creation, modification and deletion.
+Configured real-time monitoring of a dedicated directory and verified the detection of file creation, modification and deletion.
 
 | Activity | Rule ID | Alert Level |
 |---|---|---|
@@ -45,7 +45,6 @@ Configured a real-time monitoring of a dedicated directory and verified the dete
 | File modification | 550 | 7 |
 | File deletion | 553 | 7 |
 
-[Investigation report (Authentication)](reports/failed-logon-investigation.md)
 [Investigation report (FIM)](reports/fim-investigation.md)
 
 ## Documentation
@@ -65,4 +64,4 @@ Configured a real-time monitoring of a dedicated directory and verified the dete
 
 ## Limitations
 
-This project was conducted in a controlled home lab environment. The generated events represent simulated security scenarios rather than actual malicous activity.
+This project was conducted in a controlled home lab environment. The generated events represent simulated security scenarios rather than actual malicious activity.
