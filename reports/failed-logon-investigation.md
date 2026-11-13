@@ -59,9 +59,9 @@ The alert correctly identified a failed authentication attempt. However, the act
 
 ## 7. Evidence
 
-- Threat Hunting Search
-- Authentication Alert
-- Event Details
+- [Threat Hunting Search](../evidence/authentication/)
+- [Authentication Alert](../evidence/authentication/)
+- [Event Details]
 
 ## 8. Conclusion
 
