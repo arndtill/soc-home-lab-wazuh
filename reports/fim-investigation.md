@@ -64,7 +64,7 @@ Wazuh detected the creation of fim-test.txt through rule 554.
 | Event | added |
 | Monitoring Mode | realtime |
 | File Size | 17 bytes |
-| SHA-256 After | 7a32d9037fb7ee4cf70907f38b68dbd5e76c21502574ea3d0044dfd39349915117 |
+| SHA-256 After | 7a32d9037fb7ee4cf70907f38b68dbd5e76c21502574ea3d0044dfd393499151 |
 
 This event established the initial recorded state of the file.
 
