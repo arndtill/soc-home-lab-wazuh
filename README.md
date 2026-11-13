@@ -45,12 +45,13 @@ Configured a real-time monitoring of a dedicated directory and verified the dete
 | File modification | 550 | 7 |
 | File deletion | 553 | 7 |
 
-Investigation report
+[Investigation report (Authentication)](reports/failed-logon-investigation.md)
+[Investigation report (FIM)](reports/fim-investigation.md)
 
 ## Documentation
 
-- Lab Architecture
-- Deployment and Configuration
+- [Lab Architecture](documentation/lab-architecture.md)
+- [Deployment and Configuration](documentation/deployment.md)
 
 ## Skills demonstrated
 
