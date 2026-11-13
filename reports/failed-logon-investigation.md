@@ -59,9 +59,9 @@ The alert correctly identified a failed authentication attempt. However, the act
 
 ## 7. Evidence
 
-- [Threat Hunting Search](../evidence/authentication/)
-- [Authentication Alert](../evidence/authentication/)
-- [Event Details]
+- [Threat Hunting Search](../evidence/authentication/01_failed_logon_search.PNG)
+- [Authentication Alert](../evidence/authentication/02_failed_logon_alert_PNG)
+- [Event Details](../evidence/fim/03a_failed_logon_agent.png)
 
 ## 8. Conclusion
 
