@@ -73,6 +73,7 @@ This event established the initial recorded state of the file.
 Wazuh detected a change in the file contents through rule 550.
 
 | Field | Value |
+|---|---|
 | Event | Modified |
 | Monitoring Mode | realtime |
 | Size Before | 17 bytes |
@@ -123,10 +124,10 @@ The detected file operations were intentionally performed as part of the control
 
 ## 8. Evidence
 
-- Threat Hunting Search
-- File Creation Alert
-- File Modification Alert
-- File Deletion Aler
+- [Threat Hunting Search](../evidence/01_fim_search.PNG)
+- [File Creation Alert](../evidence/02_fim_file_added.PNG)
+- [File Modification Alert](../evidence/03_fim_file_modified.PNG)
+- [File Deletion Alert](../evidence/04_fim_file_deleted.PNG)
 
 ## 9. Conclusion
 
