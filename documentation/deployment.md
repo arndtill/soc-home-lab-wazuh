@@ -15,10 +15,10 @@ OpenSSH was enabled to allow remote administration from the Windows Host.
 
 Wazuh 4.14.10 was deployed using the official installation assistant with the all-in-one installation option.
 Installation commands:
-
+```
 curl -sO https://packages.wazuh.com/4.14/wazuh-install.sh
 sudo bash ./wazuh-install.sh -a
-
+```
 The deployment includes the Wazuh Manager, Indexer, Dashboard and Filebeat.
 
 ## 3. Service Verification
@@ -85,5 +85,5 @@ The agent configuration was inspected to verify that the Windows Security event 
 
 ## References
 
-- Wazuh Documentation
-- Wazuh Quickstart
+- [Wazuh Documentation](https://documentation.wazuh.com/current/)
+- [Wazuh Quickstart](https://documentation.wazuh.com/quickstart.html)
