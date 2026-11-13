@@ -2,7 +2,7 @@
 
 ## 1. Objective
 
-Verify that Wazuh detects file creation, modification and deletion on a monitorized Windows Endpoint.
+Verify that Wazuh detects file creation, modification and deletion on a monitored Windows Endpoint.
 
 ## 2. Test Environment
 
@@ -30,7 +30,7 @@ Each operation was performed to verify the corresponding FIM detection.
 | Activity | Rule ID | Alert Level | Description |
 |--|---|---|---|
 | File creation | 554 | 5 | File added to the system |
-| File modiciation | 550 | 7 | Integrity checksum changed |
+| File modification | 550 | 7 | Integrity checksum changed |
 | File deletion | 553 | 7 | File deleted |
 
 All three operations generated the expected alerts.
@@ -41,7 +41,7 @@ The alerts were located through the Threat Hunting section of the Wazuh Dashboar
 
 agent.name:Windows10Pro AND rule.id: (550 OR 553 OR 554)
 
-The event details were inspected to idenfity the affected file, event type and available file hashes.
+The event details were inspected to identify the affected file, event type and available file hashes.
 
 | Field | Purpose |
 |---|---|
@@ -74,7 +74,7 @@ Wazuh detected a change in the file contents through rule 550.
 
 | Field | Value |
 |---|---|
-| Event | Modified |
+| Event | modified |
 | Monitoring Mode | realtime |
 | Size Before | 17 bytes |
 | Size After | 31 bytes |
@@ -102,7 +102,7 @@ The deletion alert retains the last known SHA-256 hash and file size in the corr
 - All three events were detected in real time
 - The file size increased from 17 to 31 bytes
 - The SHA-256 hash changed after the file modification
-- A deletion alert retained the last recorded hash and file size
+- The deletion alert retained the last recorded hash and file size
 
 These findings establish a consistent sequence of file creation, modification and deletion.
 
@@ -116,9 +116,9 @@ These findings establish a consistent sequence of file creation, modification an
 
 ## 7. Alert Classification
 
-- Classification: benign true positive
-- Malicious activity: not identified
-- Response: no remediation required
+- **Classification:** benign true positive
+- **Malicious activity:** not identified
+- **Response:** no remediation required
 
 The detected file operations were intentionally performed as part of the controlled test.
 
@@ -135,4 +135,4 @@ Wazuh successfully detected all three file operations and made the corresponding
 
 ## 10. Limitations
 
-The investigation was limited to a dedicated test directory and controlled file operations. File integrity monitoring detects changes but does no t independently determine whether those changes are malicious.
+The investigation was limited to a dedicated test directory and controlled file operations. File integrity monitoring detects changes but does not independently determine whether those changes are malicious.
