@@ -53,7 +53,7 @@ The virtual machine uses two network adapters:
 | Operating system | Windows 10 Pro |
 | Status | Active |
 
-[Agent Status Evidence](../evidence/authentication/wazuh-agent.png)
+[Agent Status Evidence](../evidence/infrastructure/wazuh-agent.png)
 ## Security Considerations
 
 - Wazuh Indexer listens on the local interface
