@@ -15,7 +15,7 @@ This lab consists of a Wazuh server running on an Ubuntu virtual machine and a W
 | Hypervisor | Oracle VirtualBox |
 | Guest operating system | Ubuntu Server 24.04 LTS |
 | Virtual CPUs | 4 |
-| Allocatedmemory | 4 GB |
+| Allocated memory | 8 GB |
 | Virtual disk | 80 GB |
 
 ## Architecture
@@ -32,7 +32,7 @@ This lab consists of a Wazuh server running on an Ubuntu virtual machine and a W
 | Component | Function |
 |---|---|
 | Wazuh Agent | Collects endpoint security events and monitors file integrity |
-| Wazuh Manage | Processes events, applies detection rules and generates alerts |
+| Wazuh Manager | Processes events, applies detection rules and generates alerts |
 | Filebeat | Forwards alerts to the Wazuh Indexer |
 | Wazuh Indexer | Stores and indexes security alerts |
 | Wazuh Dashboard | Provides a graphical interface for monitoring and investigating alerts |
